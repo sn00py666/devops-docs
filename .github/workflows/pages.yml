@@ -10,10 +10,10 @@ on:
       - ".github/workflows/pages.yml"
   workflow_dispatch:
 
-# ИНЦИДЕНТ 2: право id-token: write будет добавлено после проверки.
 permissions:
   contents: read
   pages: write
+  id-token: write
 
 concurrency:
   group: pages
